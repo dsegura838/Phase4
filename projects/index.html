@@ -14,21 +14,23 @@
   <body>
 	
     <nav class="navbar navbar-expand-md">
-        <a class="navbar-brand" href="#"><img src="orangechicken.jpg" alt="plate of chicken"></a>
+      <!--<a class="navbar-brand" href="#"><img src="..." alt="..."></a>-->
+        
         <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="main-navigation">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="main.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Menu</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="form.html">Contact</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="page.html">Pagination</a>
-            </li>
+           
           </ul>
         </div>
       </nav>
@@ -51,6 +53,31 @@
     
                     <p class="text-center bg-info"> The main dish of Ming's Diner is our Orange Chicken.</p>
     
+            </div>
+
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="orangechicken.jpg" class="d-block w-100" alt="orange chicken">
+                </div>
+                <div class="carousel-item">
+                  <img src="ramen.jpg" class="d-block w-100" alt="plate of ramen">
+                </div>
+                <div class="carousel-item">
+                  <img src="chicken-stir-fry.jpg" class="d-block w-100" alt="chicken stir fry">
+                </div>
+                <div class="carousel-item">
+                  <img src="burger.jpg" class="d-block w-100" alt="burger">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
     
     
@@ -75,18 +102,24 @@
                 </tbody>
               </table>
             </div>
-            <div class="container-fluid">
-                    <p class="text-left">Lets take a look at the components of bootstrap:</p>
-                    <h1>CSS<span class="badge badge-secondary">Quoted</span></h1>
-                    <p class="text-justify">Copy-paste the stylesheet link into your head before all other stylesheets to load our CSS.</p>
-        <h2>JS <span class="badge badge-secondary">Quoted</span></h2>
-                    <p class="text-justify">Many of our components require the use of JavaScript to function. Specifically, they require jQuery, Popper.js, and our own JavaScript plugins. Place the following scripts near the end of your pages, right before the closing bodytag, to enable them. jQuery must come first, then Popper.js, and then our JavaScript plugins.We use jQuery’s slim build, but the full version is also supported.</p>
+            
             </div>
             <div class="card">
                       <div class="card-header">Author</div>
                       <div class="card-body">The article was contributed by David</div>
                       <a href="https://www.bing.com/maps?q=mings+diner&cvid=6e332395a39b47fd92b0a8f28b2d352f&aqs=edge..69i57j0l6.4551j0j1&pglt=299&FORM=ANNTA1&PC=ACTS" class="card-footer btn btn-outline-primary stretched-link">Our Address</a>
             </div>
+
+            <nav aria-label="Pagination Demo">
+              <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+                <li class="page-item"><a class="page-link" href="form.html">2</a></li>
+                <li class="page-item"><a class="page-link" href="page.html">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+              </ul>
+            </nav>
+
             <!-- Footer -->
             <footer class="page-footer font-small indigo">
     
