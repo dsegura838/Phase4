@@ -20,6 +20,8 @@
     <script src="create_table.js"></script>
 
 </head>
+
+
 <body onload="CreateTableFromJSON()">
     <p id="showData"></p>
     <H3>Add New Deal</H3>
@@ -30,5 +32,16 @@
         <label>Project Cost</label><input type="number" id="projectCostInput" /><br />
     </p>
     <input type="button" onclick="AddNewDeal()" value="Save" />
+
+    <nav aria-label="Pagination Demo">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="vendors.html">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+          <li class="page-item"><a class="page-link" href="vendors.html">2</a></li>
+          <li class="page-item"><a class="page-link" href="deals.html">3</a></li>
+          
+        </ul>
+      </nav>
     
 </body>
+</html>
