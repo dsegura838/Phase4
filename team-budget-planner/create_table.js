@@ -58,7 +58,7 @@ function CreateTableFromJSON() {
         //TODO: Complete this
         //////////////////////////////
         var tabCell = tr.insertCell(-1);
-        tabCell.innerHTML = '<button onclick="DeleteRow(' + myData[i].dealId + ')"> <img src="trashcan.png"> </button>'
+        tabCell.innerHTML = '<button onclick="DeleteRow(' + myData[i].dealId + ')"> Delete </button>'
 
     }
 
@@ -105,3 +105,4 @@ function DeleteRow(dealId) {
     }
     CreateTableFromJSON();
 }
+

@@ -56,9 +56,13 @@ function CreateTableFromJSON() {
         }
         // Insert Extra Cell for the Delete Icon
         //TODO: Complete this
-        //////////////////////////////
+        //////////////////////////////<img src="trashcan.png">
+        //
+        //<button  Trash</button>
         var tabCell = tr.insertCell(-1);
-        tabCell.innerHTML = '<button onclick="DeleteRow(' + myData[i].VendorId + ')"> <img src="trashcan.png"> </button>'
+        tabCell.innerHTML = '<button onclick="DeleteRow(' + myData[i].VendorId + ')"> Delete </button>'
+
+        
 
     }
 
@@ -84,6 +88,8 @@ function AddNewDeal() {
 
 }
 
+
+
 function InsertRow(VendorId, clientName) {
     myData.push({"VendorId": VendorId, "client_name" : clientName})
     currentDealId++;
@@ -103,3 +109,4 @@ function DeleteRow(VendorId) {
     }
     CreateTableFromJSON();
 }
+
